@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let bgTaskLocalNotif = "com.BGTask.localNotif"
     
+    
     // MARK: - RootView Setup
     func setRootViewController(rootVC: UIViewController) {
         
@@ -50,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // MARK: - Call Back
 extension AppDelegate {
     
-    private func registerBgTask() {
+    fileprivate func registerBgTask() {
         
         BGTaskScheduler.shared.cancelAllTaskRequests()
         
@@ -63,14 +64,14 @@ extension AppDelegate {
         }
     }
     
-    private func handleBackgroundTask(task: BGProcessingTask) {
+    fileprivate func handleBackgroundTask(task: BGProcessingTask) {
         
         self.submitBackgroundTask()
         
         task.setTaskCompleted(success: true)
     }
     
-    private func submitBackgroundTask() {
+    fileprivate func submitBackgroundTask() {
         
         // check if there is a pending task request or not
         BGTaskScheduler.shared.getPendingTaskRequests { [weak self] request in
@@ -95,7 +96,7 @@ extension AppDelegate {
         }
     }
     
-    func scheduleNotification() {
+    fileprivate func scheduleNotification() {
         
         var count = 0
         let content = UNMutableNotificationContent()
@@ -120,7 +121,7 @@ extension AppDelegate {
 // MARK: - Remote Notification Handler
 extension AppDelegate: UNUserNotificationCenterDelegate {
     
-    func registerForPushNotifications() {
+    fileprivate func registerForPushNotifications() {
         
         UNUserNotificationCenter.current().delegate = self
         UNUserNotificationCenter.current().requestAuthorization(options: [.sound,.alert,.badge]) { (granted, error) in
@@ -130,7 +131,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         }
     }
     
-    func getNotificationSettings() {
+    fileprivate func getNotificationSettings() {
         
         UNUserNotificationCenter.current().getNotificationSettings { settings in
             

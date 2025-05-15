@@ -96,6 +96,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122823DA2DD5CF20001D40F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12CF93682D01799100E2B81B /* DashboardVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		122823DB2DD5CF30001D40F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12982BFF2D6DA1510032AC92 /* HomeVC.swift */,
+				12982BFB2D6DA1300032AC92 /* HomeVC.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		122823DC2DD5CF39001D40F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12982C042D6DA3ED0032AC92 /* SocietyVC.swift */,
+				12982C052D6DA3ED0032AC92 /* SocietyVC.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		12722E8C2D03049200A450D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +150,7 @@
 		12982BF62D6DA1080032AC92 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				12982BFF2D6DA1510032AC92 /* HomeVC.swift */,
-				12982BFB2D6DA1300032AC92 /* HomeVC.xib */,
+				122823DB2DD5CF30001D40F2 /* Controller */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -133,8 +158,7 @@
 		12982C032D6DA3DC0032AC92 /* Society */ = {
 			isa = PBXGroup;
 			children = (
-				12982C042D6DA3ED0032AC92 /* SocietyVC.swift */,
-				12982C052D6DA3ED0032AC92 /* SocietyVC.xib */,
+				122823DC2DD5CF39001D40F2 /* Controller */,
 			);
 			name = Society;
 			sourceTree = "<group>";
@@ -211,7 +235,7 @@
 		12CF93672D01796E00E2B81B /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				12CF93682D01799100E2B81B /* DashboardVC.swift */,
+				122823DA2DD5CF20001D40F2 /* Controller */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -431,11 +455,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BackgroundTaskDemo/BackgroundTaskDemo.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7X37T48VFM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/Utilities/Info.plist";
@@ -450,10 +475,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.digirealtytech.digirealty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BackgroundTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = digirealty_development;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,11 +491,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BackgroundTaskDemo/BackgroundTaskDemo.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7X37T48VFM;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/Utilities/Info.plist";
@@ -485,10 +511,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.digirealtytech.digirealty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BackgroundTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = digirealty_development;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
